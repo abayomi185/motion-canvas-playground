@@ -1,10 +1,12 @@
-import {defineConfig} from 'vite';
-import motionCanvas from '@motion-canvas/vite-plugin';
-import ffmpeg from '@motion-canvas/ffmpeg';
+import { defineConfig } from "vite";
+import motionCanvas from "@motion-canvas/vite-plugin";
+import ffmpeg from "@motion-canvas/ffmpeg";
 
 export default defineConfig({
   plugins: [
-    motionCanvas(),
+    motionCanvas({
+      project: ["./src/playground-project/project.ts"],
+    }),
     ffmpeg(),
   ],
 });
