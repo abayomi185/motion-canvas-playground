@@ -5,7 +5,12 @@ import ffmpeg from "@motion-canvas/ffmpeg";
 export default defineConfig({
   plugins: [
     motionCanvas({
-      project: ["./src/playground-project/project.ts"],
+      project: [
+        "./src/playground-project/project.ts",
+        "./src/another-project/project.ts",
+        "./src/youtube/project.ts",
+        "./src/instagram-story/project.ts",
+      ],
     }),
     ffmpeg(),
   ],

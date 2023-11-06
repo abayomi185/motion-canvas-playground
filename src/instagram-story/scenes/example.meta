@@ -1,0 +1,10 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "circle_event",
+      "targetTime": 8
+    }
+  ],
+  "seed": 156317054
+}
